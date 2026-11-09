@@ -5,31 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi portfolio</title>
 </head>
-
 <body>
 
     <header>
-        <h1>Rubén</h1>
+        <h1 id="inicio">Rubén</h1>
         <p>Portfolio personal</p>
-
         <nav>
-            <a href="entorno.html">Mi entorno de trabajo</a>
+            <ul>
+                <li><a href="index.html" aria-current="page">Inicio</a></li>
+                <li><a href="entorno.html">Mi entorno de trabajo</a></li>
+                <li><a href="sobre-mi.html">Sobre mí</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
         <section>
             <h2>Sobre mí</h2>
+            <img src="img/avatar-tostada.png" alt="Avatar" width="200" height="200">
             <p>
-                Soy estudiante de DAM.
-                En este portfolio recopilo mis trabajos y aprendizajes
+                Soy estudiante de DAM. En este portfolio recopilo mis trabajos y aprendizajes
                 relacionados con el desarrollo web.
+            </p>
+            <p>
+                Si quieres saber qué hago en mi tiempo libre, visita la sección
+                <a href="sobre-mi.html#aficiones">Mis aficiones en la página Sobre mí</a>.
             </p>
         </section>
 
         <section>
             <h2>Mis conocimientos</h2>
-
             <ul>
                 <li>HTML</li>
                 <li>Git</li>
@@ -43,34 +49,26 @@
 
         <section>
             <h2>Mis trabajos</h2>
-            
             <article>
                 <h3>Actividad 1</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+                <p>Primera toma de contacto con HTML: estructura básica de una página y etiquetas de texto.</p>
             </article>
-
             <article>
                 <h3>Actividad 2</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+                <p>Creación de listas y secciones para organizar el contenido de una página.</p>
             </article>
+            <p><a href="proyectos.html">Ver la galería completa de mis proyectos</a></p>
         </section>
 
         <section>
             <h2>Objetivos</h2>
-            <p>
-                Mi objetivo es seguir aprendiendo desarrollo web
-                y mejorar progresivamente mis proyectos.
-            </p>
+            <p>Mi objetivo es seguir aprendiendo desarrollo web y mejorar progresivamente mis proyectos.</p>
         </section>
 
         <section>
             <h2>Nota</h2>
             <p>
-                Me da pereza pensar el contenido de esta actividad entregable, para ver mi portfolio serio lo encontraréis en mi github
+                Este portfolio es para una actividad entregable con contenido inventado y texto de relleno generado por IA. Para ver mi portfolio serio, visita mi github.
             </p>
         </section>
     </main>
