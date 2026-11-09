@@ -7,19 +7,23 @@
 </head>
 <body>
 
+    <a href="#contenido">Saltar al contenido</a>
+
     <header>
         <h1 id="arriba">Sobre mí</h1>
-        <nav>
+        <nav aria-label="Menú principal">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="entorno.html">Mi entorno de trabajo</a></li>
                 <li><a href="sobre-mi.html" aria-current="page">Sobre mí</a></li>
                 <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main id="contenido">
         <nav aria-label="Índice de esta página">
             <h2>Índice</h2>
             <ul>
@@ -67,7 +71,7 @@
             </p>
             <p><a href="#arriba">Volver arriba</a></p>
         </section>
-        
+
         <section>
             <h2>Nota</h2>
             <p>
@@ -77,7 +81,10 @@
     </main>
 
     <footer>
-        <p>Portfolio de Rubén</p>
+        <p>
+            Portfolio de Rubén · 2026 ·
+            <a href="https://github.com/ruben-dam-demo" target="_blank" rel="noopener noreferrer">GitHub de Rubén (se abre en una pestaña nueva)</a>
+        </p>
     </footer>
 
 </body>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+
+    <a href="#contenido">Saltar al contenido</a>
+
+    <header>
+        <h1>Contacto</h1>
+        <nav aria-label="Menú principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="entorno.html">Mi entorno de trabajo</a></li>
+                <li><a href="sobre-mi.html">Sobre mí</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido">
+        <section>
+            <h2>Escríbeme</h2>
+            <p>Rellena el formulario. Los campos marcados como obligatorios deben completarse.</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Datos de contacto</legend>
+
+                    <p>
+                        <label for="nombre">Nombre (obligatorio)</label><br>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </p>
+
+                    <p>
+                        <label for="correo">Correo electrónico (obligatorio)</label><br>
+                        <input type="email" id="correo" name="correo" required>
+                    </p>
+
+                    <p>
+                        <label for="motivo">Motivo del contacto</label><br>
+                        <select id="motivo" name="motivo">
+                            <option value="consulta">Consulta general</option>
+                            <option value="proyecto">Propuesta de proyecto</option>
+                            <option value="colaboracion">Colaboración</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Cómo me has conocido</legend>
+
+                    <p>
+                        <input type="radio" id="origen-github" name="origen" value="github">
+                        <label for="origen-github">Por GitHub</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="origen-clase" name="origen" value="clase">
+                        <label for="origen-clase">En clase</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="origen-otro" name="origen" value="otro">
+                        <label for="origen-otro">De otra forma</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Tu mensaje</legend>
+
+                    <p>
+                        <label for="mensaje">Mensaje (máximo 500 caracteres)</label><br>
+                        <textarea id="mensaje" name="mensaje" rows="6" cols="40" maxlength="500"></textarea>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="privacidad" name="privacidad" required>
+                        <label for="privacidad">Acepto la política de privacidad (obligatorio)</label>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Enviar mensaje</button>
+                </p>
+            </form>
+        </section>
+
+        <section>
+            <h2>Otra forma de contactar</h2>
+            <p>
+                Si prefieres no usar el formulario, puedes escribirme a
+                <a href="mailto:ruben.demo@example.com">ruben.demo@example.com (correo inventado, no mandes correo)</a>.
+            </p>
+        </section>
+
+        <section>
+            <h2>Nota</h2>
+            <p>
+                Este portfolio es para una actividad entregable con contenido inventado y texto de relleno generado por IA. Para ver mi portfolio serio, visita mi github.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Portfolio de Rubén · 2026 ·
+            <a href="https://github.com/ruben-dam-demo" target="_blank" rel="noopener noreferrer">GitHub de Rubén (se abre en una pestaña nueva)</a>
+        </p>
+    </footer>
+
+</body>
+</html>

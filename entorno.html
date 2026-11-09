@@ -7,19 +7,23 @@
 </head>
 <body>
 
+    <a href="#contenido">Saltar al contenido</a>
+
     <header>
         <h1>Mi entorno de trabajo</h1>
-        <nav>
+        <nav aria-label="Menú principal">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="entorno.html" aria-current="page">Mi entorno de trabajo</a></li>
                 <li><a href="sobre-mi.html">Sobre mí</a></li>
                 <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main id="contenido">
         <section>
             <h2>Qué ocurre cuando escribo una URL</h2>
             <p>
@@ -36,6 +40,15 @@
                 <li>Finalmente, el navegador interpreta esos recursos y muestra la página en pantalla.</li>
             </ol>
         </section>
+
+        <aside>
+            <h2>Para saber más</h2>
+            <p>
+                Si quieres profundizar en cómo funciona la web, la guía
+                <a href="https://developer.mozilla.org/es/docs/Learn_web_development/Core/Structuring_content" target="_blank" rel="noopener noreferrer">Estructurar contenido con HTML en MDN (se abre en una pestaña nueva)</a>
+                explica las etiquetas básicas paso a paso.
+            </p>
+        </aside>
 
         <section>
             <h2>Herramientas que utilizo</h2>
@@ -70,6 +83,8 @@ portfolio/
 ├── entorno.html
 ├── sobre-mi.html
 ├── proyectos.html
+├── cv.html
+├── contacto.html
 ├── README.md
 ├── docs/
 │   └── presentacion.txt
@@ -84,14 +99,15 @@ portfolio/
             <p>
                 El archivo index.html funciona como portada del portfolio. El archivo entorno.html
                 contiene información sobre mi entorno de trabajo. En sobre-mi.html cuento quién soy
-                y en proyectos.html muestro mis trabajos.
+                y en proyectos.html muestro mis trabajos. En cv.html está mi currículum y en
+                contacto.html, el formulario para escribirme.
             </p>
             <p>
                 La carpeta img almacena las imágenes que utiliza el portfolio y la carpeta docs, los
                 documentos descargables. El archivo README.md contiene información general del proyecto.
             </p>
         </section>
-        
+
         <section>
             <h2>Nota</h2>
             <p>
@@ -101,7 +117,10 @@ portfolio/
     </main>
 
     <footer>
-        <p>Portfolio de Rubén</p>
+        <p>
+            Portfolio de Rubén · 2026 ·
+            <a href="https://github.com/ruben-dam-demo" target="_blank" rel="noopener noreferrer">GitHub de Rubén (se abre en una pestaña nueva)</a>
+        </p>
     </footer>
 
 </body>
